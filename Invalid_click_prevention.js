@@ -1,6 +1,6 @@
 const clickLimit = 3;
-const timeLimit = 1000;
-const accessLimit = 24 * 60 * 60 * 1000; 
+const timeLimit = 1111000;
+const accessLimit = 1000; 
 let clickCount = 0;
 let lastClickTime = 0;
 
