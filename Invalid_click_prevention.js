@@ -4,7 +4,7 @@ const accessLimit = 24 * 60 * 60 * 1000;
 let clickCount = 0;
 let lastClickTime = 0;
 
-const adsDiv = document.querySelector('.zakra-content');
+const adsDiv = document.querySelector('.ultp-heading-inner');
 
   adsDiv.addEventListener('click', () => {
   const currentTime = Date.now();
