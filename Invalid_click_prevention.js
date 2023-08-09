@@ -4,7 +4,7 @@
   let clickCount = 0;
   let lastClickTime = 0;
 
-  const adsDiv = document.querySelector('.ultp-heading-inner');
+  const adsDiv = document.querySelector('.ultp-filter-navigation');
 
     adsDiv.addEventListener('click', () => {
     const currentTime = Date.now();
