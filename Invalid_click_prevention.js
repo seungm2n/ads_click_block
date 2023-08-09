@@ -16,16 +16,7 @@ const adsDiv = document.querySelector('.ultp-heading-inner');
    adsDiv.innerHTML = "클릭 제한 초과";
    adsDiv.style.pointerEvents = "none"; 
    location.reload();
-    }
-  } else {
-    clickCount = 1;
-      adsDiv.style.pointerEvents = "auto";
-  }
-
-  lastClickTime = currentTime;
-});
-
-// 페이지 접근 제한
+  // 페이지 접근 제한
 const lastAccessTime = localStorage.getItem('lastAccessTime');
 const currentTime = Date.now();
 
@@ -34,3 +25,13 @@ if (!lastAccessTime || currentTime - lastAccessTime >= accessLimit) {
 } else {
   document.body.innerHTML = "24시간 이내에 다시 접근할 수 없습니다.";
 }
+  }
+  } else {
+    clickCount = 1;
+      adsDiv.style.pointerEvents = "auto";
+  }
+
+  lastClickTime = currentTime;
+});
+
+
